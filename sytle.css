@@ -1,0 +1,264 @@
+body{
+    background-image: url("./assets/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.container-md-1{
+
+    position: relative;
+    top:140px;
+    height:400px;
+    display: grid;
+    z-index: 1;
+}
+.container-md-2{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;  
+    gap:30px;
+    height: 300px;
+}
+.name-container{
+    display: flex;
+    align-content: first baseline;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap-reverse;
+    top:20vh;
+}
+.title{
+    width: 200px;
+    height: 50px;
+    
+}
+.one1{
+    text-align: center;
+    font-family: 'Concert One', cursive;
+   
+}
+.link1{
+    text-decoration: none;
+    color: #635985;
+    font-size: 8rem;
+
+}
+.two2{
+    text-align: center;
+    font-family: 'Concert One', cursive;
+}
+.link2{
+    text-decoration: none;
+    color: #635985;
+    font-size: 20pt;
+}
+.three3{
+    text-align: center;
+    font-family: 'Concert One', cursive;
+}
+.link3{
+    text-decoration: none;
+    color: #635985;
+    font-size: 20pt;
+}
+.circle-container{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+}
+.one{
+    background-image: url("./assets/background/beau.gif");
+    background-size: cover;
+    opacity: 0.85;
+    transition: transform 0.5s ease-out 0.3s;
+    z-index: 3;
+}
+.one:hover{
+    transform:scale(1.1);
+}
+.prose1{
+    width: 180px;
+    height:300px;
+    border-radius: 5%;
+    position: relative;
+    left:165px;   
+    background-color: #9A3B3B; 
+    top:100px;
+    transition: opacity 0.8s ease 0.8s;
+    opacity: 0;
+    display: grid;
+    grid-auto-rows: 100px 120px;
+    z-index: 2;
+}
+.one:hover .prose1{
+    opacity:1;
+ }
+/* .prose1 div{
+    background-color: #A2FF86;
+} */
+.tree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tree:hover .prose{
+    background-image: url("./assets/background/bgtree.png");
+}
+@keyframes slideLeft{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.beau-prose{
+    color: white;
+    font-size: 13pt;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    animation: slideLeft 5s ease-in 0.3s 1 normal none;
+}
+
+.two{
+    background-image: url("./assets/background/passion.gif");
+    background-size: cover;
+    opacity: 0.8;
+    transition: transform 0.5s ease-out 0.3s;
+    z-index: 1;
+}
+
+.two{
+    background-image: url("./assets/background/passion.gif");
+    background-size: cover;
+    opacity: 0.8;
+    transition: transform 0.5s ease-out 0.3s;
+}
+
+.two:hover{
+    transform: scale(1.1);
+}
+.prose2{
+    width: 180px;
+    height: 300px;
+    border-radius: 5%;
+    position: relative;
+    z-index: 0;
+    left:165px;   
+    background-color: #0C356A; 
+    opacity: 0;
+    top:100px;
+    transition: opacity 0.8s ease 0.8s;
+    display: grid;
+    grid-template-rows: 100px 120px;
+
+}
+.bird{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ador-prose{
+    color: white;
+    font-size: 13pt;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    animation: slideLeft 5s ease-in 0.3s 1 normal none;
+}
+.two:hover .prose2{
+    opacity: 1;
+}
+.three{
+    background-image: url("./assets/background/captivate.gif");
+    background-size: cover;
+    opacity: 0.8;
+    transition: transform 0.5s ease 0.5s;
+    z-index: 0;
+
+}
+
+.three:hover{
+    transform: scale(1.1);
+}
+.prose3{
+    position: absolute;
+    width: 180px;
+    height: 300px;
+    border-radius: 5%;
+    top:100px;
+    left: 150px;
+    background-color: #272829;
+    opacity: 0;
+    transition: opacity 0.5s ease 0.8s;
+    z-index: -1;
+    display: grid;
+    grid-template-rows: 100px 120px;
+}
+.cloud{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.mosmer-prose{
+    color: white;
+    font-size: 13pt;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    animation: slideLeft 5s ease-in 0.3s 1 normal none;
+}
+.three:hover .prose3{
+   opacity: 1;
+}
+.she1{
+    color: #16FF00; 
+}
+.pic1{
+    width: 65px;
+    height: 0px;
+    position: relative;
+    bottom: 0px;
+    left:55px;
+    transition: all .8s ease .8s;
+    border-radius: 50%;
+    background-image: url("./assets/Img/photo_6298579478594566369_y.jpg");
+}
+.she1:hover + .pic1{
+    height: 65px;
+
+}
+.pic2{
+    width: 65px;
+    height: 0px;
+    position: relative;
+    bottom: 0px;
+    left:55px;
+    transition: all .8s ease .8s;
+    border-radius: 50%;
+    background-image: url("./assets/Img/beautiful\ \(1\).jpg");
+}
+.she2:hover + .pic2{
+    height: 65px;
+
+}
+.pic3{
+    width: 65px;
+    height: 0px;
+    position: relative;
+    bottom: 0px;
+    left:55px;
+    transition: all .8s ease .8s;
+    border-radius: 50%;
+    background-image: url("./assets/Img/photo_6300901711576937736_y.jpg");
+}
+.she3:hover + .pic3{
+    height: 65px;
+}
